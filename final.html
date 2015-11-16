@@ -1,36 +1,142 @@
 <html>
-<head>
-    <title>What2Eat</title>
+  <head>
+    <!--Responsiveness to different screen resolutions-->
+    <metaname="viewport"content="width=device-width,initial-scale=1">
+    <title>What<em>2</em>Eat</title>
+    <link rel="icon" type="image/jpg" href="images/eat1.jpg">
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/final.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
-  <link rel="icon" type="image/jpg" href="images/42f8d6a97b763309870a0c8aedb2b243.jpg">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="/main.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  </head>
+  <body>
+    <!--Header-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+            <!--accessibility to phones and tablets -->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">What2Eat </a>
+                <!-- <a href="/"><img alt="What2Eat" src='images/eat1.jpg' class='img-responsive' style="height:43px; padding-right:30px; margin: 5px;"></a> -->
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class ="dropdown">
+                        <a href="#" class= "dropdown-toggle" data-toggle="dropdown">All Recipes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class ="dropdown-header">Starter</li>
+                        <li><a href="#">Easy</a></li>
+                        <li><a href="#">Intermediate</a></li>
+                        <li><a href="#">Advanced</a></li>
+                        <li class="divider"></li>
+                        <li class ="dropdown-header">Main</li>
+                        <li><a href="#">Easy</a></li>
+                        <li><a href="#">Intermediate</a></li>
+                        <li><a href="#">Advanced</a></li>
+                        <li class="divider"></li>
+                        <li class ="dropdown-header">Dessert</li>
+                        <li><a href="#">Easy</a></li>
+                        <li><a href="#">Intermediate</a></li>
+                        <li><a href="#">Advanced</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
 
-</head>
-
-<body>
-
-<div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-        
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/"><img alt="What2Eat" src='images/42f8d6a97b763309870a0c8aedb2b243.jpg' class='img-responsive' style="height:43px; padding-right:30px; margin: 5px;"></a>
+        <div class="jumbotron text-center">
+            <h1>What<em>2</em>Eat?</h1>
+            <p>What<em>2</em>Eat? is your #1 source for quick dinner ideas with well-tailored recipes for food lovers by food lovers.</p>
+
+            <h3>Can't decide on what to cook for your dinner party? Let us help you decide! 
+            Just simply answer a few questions and the recipes will be presented to you.</h3>
+            <a href="#" class ="btn btn-success"> Start Questionnaire </a>
+            <a href="#" class = "btn btn-danger"> Skip Questionnaire</a>
+        </div>
+        <?div class "row">
+            <div class="col-md-4">
+        </div?>
+    </div>
+    <!--Footer-->
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="navbar-text pull-left">
+            <p>&copy; 2015 What<em>2</em>Eat?. </p>
+            </div>
+           <div class="navbar-text pull-right">
+                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+           </div>
+        </div>
+    </div>
+  <!-- Bootstrap core JavaScript
+  ================================================= -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<div class ="modal fade" id="contact" role="dialog">
+    <div class = "modal-dialog">
+        <div class ="modal-content">
+            <form class="form-horizontal" role="form">
+                <div class="modal-header">
+                     <h4>Contact</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="contact-name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="contact-name" placeholder="First & Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class =modal-footer>
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>  
+            </form>
+         </div>
+    </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
+          
+            
+          
+            <!--
         </div>
         <center>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">About us</a>
-                    </li>
+                    
                     <li><a href="http://www.manchester.ac.uk" target="_blank">All Recipes</a>
                     </li>
                     <li><a href="#">Cantact Form</a>
@@ -117,10 +223,6 @@
             <div class='col-md-6'>
             </div>
             <div class="navbar-text pull centre">
-                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
                 
 
                 
