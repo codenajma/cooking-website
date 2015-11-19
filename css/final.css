@@ -90,3 +90,15 @@ color: #ffffff;
 	background-color: #7f9293;
 	border-color: #7a898a;
 }
+/*
+.navbar-header{
+width: 10px
+}
+#navbar-main{
+	width: 90px;
+	position:relative;
+}
+#navbar-main .nav.navbar-nav .search-bar{
+position: absolute;
+right: 0
+}
