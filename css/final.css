@@ -91,6 +91,7 @@ color: #ffffff;
 	border-color: #7a898a;
 }
 
+<<<<<<< Updated upstream
 .navbar-header{
 width: 10%;
 }
@@ -101,4 +102,11 @@ width: 10%;
 #navbar-main .nav.navbar-nav .search-bar{
 position: absolute;
 right: 0;
+=======
+.pictures img{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+>>>>>>> Stashed changes
 }
